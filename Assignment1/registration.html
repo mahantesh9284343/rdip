@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registraction Page</title>
+    <meta charset="utf-8">
+    <style>
+                body{
+            font-size: 20px;
+        }
+        .iiit {
+            height: 100px;
+        }
+        .rdip {
+            float: right;
+            margin: 10px ;
+            padding-top: 20px;
+            padding-right: 10px;
+            font-size: 25px;
+        }
+        #navbar {
+            background-color: #333;
+            color:white;
+        }
+        #navbar ul {
+            margin: 0;
+            padding-top: 0;
+            list-style: none;
+            height: 40px;
+            padding-top: 5px;
+        }
+
+        #navbar li {
+            display: inline;
+        }
+        
+        .first-li {
+        margin-right: 40px;
+        }
+
+        #navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 25px;
+            padding-left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://www.iiit.ac.in/" target="_blank"> 
+        <img class="iiit" src="https://www.iiit.ac.in/img/iiit-new.png" >
+    </a>
+    <a class="rdip" href="https://serc.iiit.ac.in/rdip">RDIP</a>
+    <nav id="navbar">
+        <div class="contents">
+            <ul>
+                <li><a class="first-li" href="homepage.html">Home</a></li>
+                <li><a href="registration.html">Registraction Form</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>
+        <label> First Name: </label>
+        <input type="text"  name="name" >
+    </p>
+    <p>
+        <label> E-mail: </label>
+        <input type="text" name="email" >
+    </p>
+    <p>
+        <label> Phone No: </label>
+        <input type="integer" name="phoneno" >
+    </p>
+    
+    <p>
+        <label> GENDER </label>
+        <input name="r1" type="radio" value="MALE" id="male"> MALE
+        <input name="r2" type="radio" value="FEMALE" id="female"> FEMALE    
+    </p>
+        <label> ADDRESS </label>
+        <textarea name="ad"  placeholder="Enter Address"  column="8" rows="3" id="address">
+        </textarea>
+    </p>
+    <p>
+        <label> CURRENT YEAR </label>
+        <select name="d1" id="currentyear">
+        <option selected> FE </option>
+        <option selected> SE </opion>
+        <option seleced> TE </option>
+        <option selected> BE </option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="REGISTER">
+        <input type="reset" value="RESET">
+    </p>
+        
+</form>
+</body>
+</html>
