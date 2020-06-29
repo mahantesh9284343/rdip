@@ -43,6 +43,13 @@
             font-size: 25px;
             padding-left: 30px;
         }
+        .three{
+            margin-left: 60px;
+        }
+        label{
+            display: inline-block;
+            width: 250px;
+        }
 
     </style>
 </head>
@@ -58,43 +65,28 @@
                 <li><a href="registration.html">Registraction Form</a></li>
             </ul>
         </div>
-    </nav>
-    <p>
+    </nav><br>
+    <form method="GET" action="details.html">
         <label> First Name: </label>
-        <input type="text"  name="name" >
-    </p>
-    <p>
+        <input type="text"  name="name" id="name"><br><br>
         <label> E-mail: </label>
-        <input type="text" name="email" >
-    </p>
-    <p>
+        <input type="text" name="email" id="email"><br><br>
         <label> Phone No: </label>
-        <input type="integer" name="phoneno" >
-    </p>
-    
-    <p>
-        <label> GENDER </label>
-        <input name="r1" type="radio" value="MALE" id="male"> MALE
-        <input name="r2" type="radio" value="FEMALE" id="female"> FEMALE    
-    </p>
-        <label> ADDRESS </label>
-        <textarea name="ad"  placeholder="Enter Address"  column="8" rows="3" id="address">
-        </textarea>
-    </p>
-    <p>
-        <label> CURRENT YEAR </label>
-        <select name="d1" id="currentyear">
-        <option selected> FE </option>
-        <option selected> SE </opion>
-        <option seleced> TE </option>
-        <option selected> BE </option>
-        </select>
-    </p>
-    <p>
-        <input type="submit" value="REGISTER">
-        <input type="reset" value="RESET">
-    </p>
-        
+        <input type="integer" name="phoneno" id="phoneno"><br><br>    
+        <label> Gender: </label>
+        <input name="r1" type="radio" value="MALE" id="male"> Male
+        <input name="r2" type="radio" value="FEMALE" id="female"> Female
+        <input name="r2" type="radio" value="other" id="other"> Other<br><br>
+        <label> Reason for RDIP: </label>
+        <input name="d1" type="radio" value="htmkl" id="html"> HTML
+        <input name="d2" type="radio" value="css" id="cdd"> CSS
+        <input name="d3" type="radio" value="js" id="js"> JAVASCRIPT<br>
+        <p class="three">I declare above details given by me are true.</p>
+        <label> Colege: </label>
+        <input type="text" name="clog" id="colg"><br><br>
+        <input type="submit" name="submit" value="Submit" style="margin: 10px;">
+        <input type="reset" name="reset" value="Reset" style="margin-left: 230px;">
+    </form>
 </form>
 </body>
 </html>
