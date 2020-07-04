@@ -1,0 +1,17 @@
+body{
+    background-color: lightcyan;
+    font-size: 20px;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 60px;
+}
+input[type=text]{
+    height: 25px;
+    width: 500px;
+}
+label{
+    width: 100px;
+    display: inline-block;
+}

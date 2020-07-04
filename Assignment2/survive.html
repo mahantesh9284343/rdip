@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Survival Battle</title>
+        <link rel="stylesheet" href="survive.css">
+    </head>
+    <body>
+        <h1>Who will Survive?</h1>
+        <h3>1.Human</h3>
+        <h3>2.Cockroach</h3>
+        <h3>3.Nuclear Bomb</h3>
+        <button onclick="p = rand1(); return false;">Click to generate number</button>
+        <input type="integer" name="value1" id="value1"  placeholder="Number 1"></input><br><br><br>
+        <button onclick="q = rand2(); return false;">Click to generate number</button>
+        <input type="integer" name="value2" id="value2"  placeholder="Number 2"></input><br><br><br>
+
+        <button onclick='document.getElementById("ret").innerHTML = winner(p,q); return false;'>Click for Result</button><br><br>
+        <h2 id="pro"></h2>
+        <h2 id="ret"></h2>
+
+    </body>
+    <script src="function.js"> </script>
+</html>
